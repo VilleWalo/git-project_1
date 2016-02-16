@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header__block {
+  color: #fff;
+  margin-top: 15px;
+  width: 70%;
+  min-height: 600px;
+  background-color: #856;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header__block:hover {
+  color: red;
+}
+
+.main-header__block_left-block {
+  width: 50%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  background-color: green;
+}
+
+.main-header__block_right-block {
+  width: 50%;
+  display: inline-block;
+  height: 200px;
+  background-color: green;
+}
