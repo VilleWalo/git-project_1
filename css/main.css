@@ -51,14 +51,8 @@ table {
 }
 
 /* ---------------------------------------- */
-@font-face {
-  font-family: 'Helvetica Condensed Light';
-  src: url(../fonts/Helvetica-Condensed-Light-Light.ttf);
-}
-
 .main-header__block {
   color: #fff;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -77,14 +71,14 @@ table {
 
 body {
   max-width: 1280px;
-  background-color: #ddd;
+  background-color: #c4c6c9;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
 }
 
 .main_header__top-nav {
-  height: 87px;
+  min-height: 87px;
   background-color: #4c97a2;
   padding: 0 10%;
   box-sizing: border-box;
@@ -108,9 +102,8 @@ body {
 
 .main_header__nav-list li a {
   color: #fff;
-  text-align: center;
   text-decoration: none;
-  font-family: 'Helvetica Condensed Light';
+  font-family: 'Roboto';
   text-transform: uppercase;
   font-size: 19px;
   margin-right: 0.625rem;
@@ -119,8 +112,9 @@ body {
 
 .main_header__nav-list li:after {
   content: "/";
+  font-size: 19px;
   position: absolute;
-  padding-left: 1.6rem;
+  padding-left: 1.3rem;
   color: #fff;
 }
 
@@ -133,4 +127,130 @@ body {
   height: 476px;
   background-color: #2e3951;
   background-image: url(../img/slider_bg.png);
+}
+
+.main_header__slider h2 {
+  font-family: 'Roboto';
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 110px;
+  line-height: 1.2;
+}
+
+.main_header__slider-btn {
+  width: 233px;
+  height: 43px;
+  border: solid 3px #afb1b4;
+  border-radius: 7px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: rgba(200, 200, 200, 0.05);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.main_header__slider-btn a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main_header__slider-btn a:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.main_header__slider-controller {
+  display: block;
+  width: 233px;
+  margin: 0 auto;
+  padding-top: 110px;
+  text-align: center;
+  padding-top: 110px;
+}
+
+.main_page__content {
+  padding: 0 10%;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 440px;
+  padding-top: 90px;
+}
+
+.main_page__content h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.3;
+  padding-bottom: 45px;
+}
+
+.main_page__content p {
+  font-family: 'Arial';
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.main_page__content-img {
+  display: block;
+  text-align: center;
+  min-width: 416px;
+}
+
+.main_page__content-img img {
+  padding-right: 9.922%;
+}
+
+.main_page__review_block {
+  padding: 0 10%;
+  height: 468px;
+  background-color: #00d089;
+  position: relative;
+}
+
+.main_page__review_block__author {
+  position: relative;
+  padding-top: 104px;
+  margin: 0  55%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  color: #fff;
+  font-size: 26px;
+  padding-bottom: 165px;
+}
+
+.main_page__review_block__author:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: -155px;
+  background-image: url("../img/men.png");
+  width: 135px;
+  height: 135px;
+}
+
+.main_page__review_block__author:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 150px;
+  left: 0px;
+  background-image: url("../img/quotes.png");
+  width: 127px;
+  height: 92px;
 }
