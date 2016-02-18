@@ -146,6 +146,7 @@ body {
 		height: 476px;
 		background-color: #2e3951;
 		background-image: url(../img/slider_bg.png);
+		background-size: cover;
 		& h2{
 			font-family: 'Roboto';
 			font-size: 50px;
@@ -189,7 +190,7 @@ body {
 	@include wrap_padding;
 	@include border_box;
 	background-color: $color-content;
-	height: 440px;
+	min-height: 440px;
 	padding-top: 90px;
 	& h2{
 		@include roboto;
@@ -212,26 +213,28 @@ body {
 		color: #000;
 		margin-bottom: 40px;
 	}
-}
-.main_page__content-img{
-	display: block;
-	text-align: center;
-	min-width: 300px;
-	& img{
-		padding-right: 9.922%;
-		&:last-child{
-			padding-right: 0;
+
+	&-img{
+		display: block;
+		text-align: center;	
+		padding-bottom: 50px;
+		& img{
+			padding-right: 9.922%;
+			&:last-child{
+				padding-right: 0;
+			}
 		}
 	}
 }
 .main_page__review_block {
 	@include wrap_padding;
-	height: 468px;
+	@include border_box;
+	min-height: 400px;
+	padding-top: 5%;
 	background-color: $color-green;
 	position: relative;
 	&__author{
 		position: relative;
-		padding-top: 104px;
 		margin: 0  55%;
 		@include roboto;
 		color: #fff;
@@ -241,7 +244,7 @@ body {
 			content: "";
 			position: absolute;
 			display: block;
-			top: 100px;
+			top: 0%;
 			left: -155px;
 			background-image: url('../img/men.png');
 			width: 135px;
@@ -251,7 +254,7 @@ body {
 			content: "";
 			position: absolute;
 			display: block;
-			top: 150px;
+			top: 30%;
 			left: 0px;
 			background-image: url('../img/quotes.png');
 			width: 127px;
@@ -263,8 +266,7 @@ body {
 		font-weight: 500;
 		font-size: 17px;
 		line-height: 1.6;
-		padding-left: 6.56%; 
-		padding-right: 6.56%; 
+		padding: 0 6.56% 30px 6.56%; 
 		text-align: center;
 		@include roboto;
 		font-size: 16px;
@@ -275,7 +277,9 @@ body {
 	@include wrap_padding;
 	height: 520px;
 	background-image: url("../img/map.png");
+	background-size: cover;
 	padding-top: 75px;
+
 	overflow: hidden;
 	position: relative;
 	&-form-wraper{
@@ -322,10 +326,12 @@ body {
 			}
 		}
 	}
+	.main_page__form-bg{
+		position: relative;
+	}
 	.form_btn{
 		position: absolute;
-		top: 405px;
-		left: 48%;
+		left: 45%;
 		width: 67px;
 		height: 67px;
 		background-image: url("../img/okimg.png");

@@ -127,6 +127,7 @@ body {
   height: 476px;
   background-color: #2e3951;
   background-image: url(../img/slider_bg.png);
+  background-size: cover;
 }
 
 .main_header__slider h2 {
@@ -179,7 +180,7 @@ body {
   padding: 0 10%;
   box-sizing: border-box;
   background-color: #fff;
-  height: 440px;
+  min-height: 440px;
   padding-top: 90px;
 }
 
@@ -215,7 +216,7 @@ body {
 .main_page__content-img {
   display: block;
   text-align: center;
-  min-width: 300px;
+  padding-bottom: 50px;
 }
 
 .main_page__content-img img {
@@ -228,14 +229,15 @@ body {
 
 .main_page__review_block {
   padding: 0 10%;
-  height: 468px;
+  box-sizing: border-box;
+  min-height: 400px;
+  padding-top: 5%;
   background-color: #00d089;
   position: relative;
 }
 
 .main_page__review_block__author {
   position: relative;
-  padding-top: 104px;
   margin: 0  55%;
   font-family: 'Roboto';
   font-style: normal;
@@ -250,7 +252,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 100px;
+  top: 0%;
   left: -155px;
   background-image: url("../img/men.png");
   width: 135px;
@@ -261,7 +263,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 150px;
+  top: 30%;
   left: 0px;
   background-image: url("../img/quotes.png");
   width: 127px;
@@ -273,8 +275,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 1.6;
-  padding-left: 6.56%;
-  padding-right: 6.56%;
+  padding: 0 6.56% 30px 6.56%;
   text-align: center;
   font-family: 'Roboto';
   font-style: normal;
@@ -287,6 +288,7 @@ body {
   padding: 0 10%;
   height: 520px;
   background-image: url("../img/map.png");
+  background-size: cover;
   padding-top: 75px;
   overflow: hidden;
   position: relative;
@@ -344,10 +346,13 @@ body {
   font-family: 'Arial';
 }
 
+.main_page__form_block .main_page__form-bg {
+  position: relative;
+}
+
 .main_page__form_block .form_btn {
   position: absolute;
-  top: 405px;
-  left: 48%;
+  left: 45%;
   width: 67px;
   height: 67px;
   background-image: url("../img/okimg.png");
