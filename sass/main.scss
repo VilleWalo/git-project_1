@@ -141,6 +141,51 @@ body {
 		float: right;
 	}
 
+	&__nav-list-xs{
+		position: absolute;
+		right: 2%;
+		top: 16px;
+		width: 50px;
+		height: 50px;
+		border-radius: 8px;
+		display: none;
+		background-color: darken(#4c9799, 8);
+		&:hover{
+				background-color: darken(#4c9799, 15);
+			}
+		&_btn{
+			position: absolute;
+			top: 22px;
+			left: 5px;
+			width: 40px;
+			height: 6px;
+			border-radius: 3px;
+			background-color: #FFF;
+			color: #fff;
+			& a{
+				display: none;
+			}
+		}
+		&:hover &_btn li a{
+				display: block;
+				position: relative;
+				top: 22px;
+				left: -65px;;
+				width: 100px;
+				height: 20px;
+				text-decoration: none;
+				@include roboto;
+				text-align: center;
+				text-transform: uppercase;
+				background-color: darken(#4c9799, 15);
+				padding: 10px 5px;
+				&:hover{
+					background-color: lighten(#4c9799, 30);
+					color: darken(#fff, 99);
+				}
+			}	
+	}
+
 	&__slider{
 		width: 100%;
 		height: 476px;
