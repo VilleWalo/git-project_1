@@ -107,6 +107,11 @@ body {
 		background-color: $color-topline;
 		@include wrap_padding;
 		@include border_box;
+		&:after {
+        display: block;
+        content: "";
+        clear: both;
+        }
 		& h1{
 			float: left;
 			padding-left: 4.29%;
