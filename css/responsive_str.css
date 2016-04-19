@@ -1,11 +1,7 @@
 /* =Responsive Structure
 ----------------------------------------------- */
 @media (max-width: 1200px) {
-	/* Disable fixed navigation buttons */
-	#nav-single-fixed,
-	#nav-fixed {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 1000px) {
@@ -13,26 +9,6 @@
 		padding: 0 0;
 	}
 
-	#page {
-		margin: 0 auto;
-	}
-	/* Disable triange */
-	.triangle-l {
-		display: none;
-	}
-	.triangle-r {
-		display: none;
-	}
-	#access .menu {
-		margin-bottom: 31px;
-	}
-	#access .menu ul {
-		margin: 0 -1px;
-	}
-	/* Gallery thumbnails will be 4 columns from now on */
-	.gallery-items li.item {
-		width: 25%;
-	}
 }
 
 @media (max-width: 810px) {
@@ -49,11 +25,6 @@
 	.main_page__content h2{
 		font-size: 25px;
 	}
-}
-
-@media (max-width: 650px) {
-	
-
 }
 
 @media (max-width: 550px) {

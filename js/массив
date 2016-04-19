@@ -1,0 +1,22 @@
+function mass(n){
+  var array = [];
+  for (var i = 0; i < n; i++){
+   array[i]=[]; 
+   var counter2 =1, counter = i+counter2, counter3=1;
+    for (var j = n; j > 0; j--){
+      if((counter2+i)>=n) { 
+        array[i][j-1] = counter + i;
+        counter2+=1;
+        counter3++;
+        counter += counter2 + i-counter3;
+      } else{
+        array[i][j-1] = counter + i;
+        counter += counter2 + i;
+        counter2+=1;
+      }
+    }
+  }
+  return array;
+}
+
+alert(mass(4));
